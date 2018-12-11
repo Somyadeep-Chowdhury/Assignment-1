@@ -1,0 +1,110 @@
+/** {
+    box-sizing:border-box;
+}
+*/
+
+/*BODY*/
+body,html{
+    margin:0;
+    font-family: 'Lobster', cursive;
+}
+
+header{
+    background-image: url("../img/lalbagh.jpg");
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1{
+    text-align: center;
+}
+
+header nav{
+    position: fixed;
+    display: flex;
+    background-color: rgb(115, 255, 0);
+    justify-content: center;
+    box-shadow: 0 0 20px 12px black;
+    height: 70px;
+    width: 100%;
+}
+
+header nav li{
+    display: inline;
+    padding: 20px 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side{
+    flex: 30%;
+    background-color: olivedrab;
+    padding: 20px;
+}
+
+.aside{
+    background-color: grey;
+    flex: 30%;
+    padding: 20px;
+}
+
+.image{
+    width: 100%;
+    padding: 30px; 
+}
+
+.image iframe{
+    width:400px;
+    height:150px;
+}
+
+blockquote{
+    padding: 5px;
+    border-style: groove;
+    border-color:white;
+    text-align: center;
+    margin-left: 0px;
+    border-width: 1px;
+}
+
+main{
+    background-image: url("../img/gokarna3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+main li{
+    list-style-type: none;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+
+@media screen and (max-width: 620px) {
+    section, header, footer {
+        width: 100%;   
+    flex-direction: column;
+    }
